@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto-Medium';
   margin: 0 auto;
-  background: rgb(232,232,232);
+  background: #ffffff;
 }
 * {
   margin: 0;
@@ -102,6 +102,7 @@ body {
 .header-nav__item {
   font-size: 16px;
   text-transform: uppercase;
+  padding: 0 10px;
 }
 .header-nav__item>a{
   color: rgb( 148, 148, 148 );
@@ -120,7 +121,6 @@ body {
   float: right;
 }
 header {
-  background-color: #ffffff;
   padding: 18px 0;
 }
 .header-nav {
@@ -143,15 +143,86 @@ header {
   min-height: 0;
 }
 .main__block1 {
-  
+  background-color: rgb(86, 155, 189);
+}
+.main__block1__img {
+  height: 554px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/banner-top.jpg");
+}
+.main__block2__1 {
+  border-bottom: 1px solid lightgray;
+  margin: 0px 60px;
+  padding: 20px 0;
+}
+.main__block2__h {
+  font-size: 30px;
+  font-family: "RobotoSlab-Bold";
+  color: rgb( 86, 155, 189 );
+}
+.main__block2__txt {
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+  color: rgb( 148, 148, 148 );
+}
+.main__block2__ico {
+  width: 176px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.main__block2__ico1 {
+  background-image: url("../img/icon1.png");
+}
+.main__block2__ico2 {
+  background-image: url("../img/icon2.png");
+}
+.main__block2__ico3 {
+  background-image: url("../img/icon3.png");
+}
+.main__block2__ico4 {
+  background-image: url("../img/icon4.png");
 }
 
+@media screen and (max-width: 1460px) {
+  .main__block1__img {
+    height: 0;
+    padding-top: 37.9%;
+    background-size: contain;
+    background-image: url("../img/banner-top-desktop.jpg");
+  }
+  .header-nav__item {
+    font-size: 2vw;
+    padding: 0
+  }
+  .main__block2__txt {
+    font-size: 1.5vw;
+    padding: 0
+  }
+  .main__block2__1 {
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+    padding: 20px 0;
+  }
+  .main__block2__h {
+    font-size: 2vw;
+  }
+}
 @media screen and (max-width: 1060px) {
   .header-nav__item {
     font-size: 1.5vw;
   }
   .nav>li>a {
     padding: 1vw;
+  }
+  .main__block2__h {
+    font-size: 3vw;
+  }
+  .main__block2__txt {
+    font-size: 2vw;
   }
 }
 @media (min-width: 768px)and (max-width: 1060px) {
@@ -177,7 +248,25 @@ header {
     float: left;
   }
   .header-nav__item {
-    font-size: 2vw;
+    font-size: 3vw;
+    padding-left: 2vw;
+  }
+  .main__block1__img {
+    margin: 0 auto;
+    padding-top: 73%;
+    background-position: left;
+    background-size: cover;
+  }
+  .main__block2__h {
+    font-size: 4vw;
+  }
+  .main__block2__txt {
+    font-size: 3vw;
+  }
+  .main__block2__ico {
+    height: 0;
+    padding-top: 18%;
+    background-size: contain;
   }
 }
 
