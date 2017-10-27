@@ -162,7 +162,7 @@ header {
   font-family: "RobotoSlab-Bold";
   color: rgb( 86, 155, 189 );
 }
-.main__block2__txt {
+.main__block__txt {
   font-size: 18px;
   font-family: "Roboto-Medium";
   color: rgb( 148, 148, 148 );
@@ -186,6 +186,30 @@ header {
 .main__block2__ico4 {
   background-image: url("../img/icon4.png");
 }
+.main__block3__title, .main__block3__h3, .main__block3__txt {
+  display: inline-block;
+  text-align: center;
+}
+.main__block3__title {
+  background-color: rgb(119, 119, 119);
+  font-family: "Roboto-Black";
+  padding: 12px 28px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.main__block3__h3 {
+  font-size: 24px;
+}
+.main__block3__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__block3__txt {
+  text-align: center;
+  padding: 0 385px;
+}
+
 
 @media screen and (max-width: 1460px) {
   .main__block1__img {
@@ -195,10 +219,9 @@ header {
     background-image: url("../img/banner-top-desktop.jpg");
   }
   .header-nav__item {
-    font-size: 2vw;
     padding: 0
   }
-  .main__block2__txt {
+  .main__block__txt {
     font-size: 1.5vw;
     padding: 0
   }
@@ -209,6 +232,15 @@ header {
   }
   .main__block2__h {
     font-size: 2vw;
+  }
+  .main__block3__txt {
+    padding: 0 16vw;
+  }
+  .main__block3__title {
+    padding: 12px 28px;
+  }
+  .main__block3__h3 {
+    font-size: 1.8vw;
   }
 }
 @media screen and (max-width: 1060px) {
@@ -221,8 +253,11 @@ header {
   .main__block2__h {
     font-size: 3vw;
   }
-  .main__block2__txt {
+  .main__block__txt {
     font-size: 2vw;
+  }
+  .main__block3__h3 {
+    font-size: 2.8vw;
   }
 }
 @media (min-width: 768px)and (max-width: 1060px) {
@@ -260,13 +295,16 @@ header {
   .main__block2__h {
     font-size: 4vw;
   }
-  .main__block2__txt {
+  .main__block__txt {
     font-size: 3vw;
   }
   .main__block2__ico {
     height: 0;
     padding-top: 18%;
     background-size: contain;
+  }
+  .main__block3__h3 {
+    font-size: 3.8vw;
   }
 }
 
