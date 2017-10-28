@@ -272,7 +272,7 @@ header {
 .main__block4__txt3__span {
   font-weight: bold;
 }
-.main__block4__hide .main__block4__txt2 {
+.main__block4__hide>.main__block4__txt2 {
   color: #ffffff;
   width: 100%;
   text-align: center;
@@ -293,41 +293,58 @@ header {
 }
 .main__block4__nav li a {
   border-radius: 0;
+  background-color: rgb(109, 162, 140);
+  color: rgb(29, 123, 84);
+  margin-left: 20px;
+  padding: 16px 36px;
 }
 .main__block4__tab-title__wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 94px;
 }
 .main__block4__tab-title {
   background-color: #ffffff;
   padding: 0 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.tab-col1 {
+  width: 35%;
+}
+.tab-col2 {
+  width: 20%;
+}
+.tab-col34 {
+  width: 22.5%;
 }
 .main__block4__tab-title1 {
-  width: 35%;
   padding: 10px 10px;
+  color: #000000;
 }
 .main__block4__tab-title2 {
-  width: 20%;
   padding: 10px 10px;
   background-color: #569bbd;
   position: relative;
 }
 .main__block4__tab-title3 {
-  width: 22.5%;
-  padding: 10px 10px;
 
+  padding: 10px 10px;
+  color: #000000;
 }
 .main__block4__tab-title4 {
   width: 22.5%;
   padding: 10px 10px;
-
+  color: #000000;
 }
 .main__block4__tab-title__logo {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 180%;
+  height: 150%;
   background-image: url(../img/logo-white.png);
   position: absolute;
   bottom: 0;
@@ -336,7 +353,17 @@ header {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
+.main__block4__nav__item {
+  background-color: inherit;
+  font-family: "Roboto-Black";
+  font-size: 18px;
+}
+.main__block4__nav {
+  border: none;
+}
+.main__block4__nav>li>a {
+  border: none;
+}
 @media screen and (max-width: 1460px) {
   .main__block1__img {
     height: 0;
@@ -369,6 +396,9 @@ header {
   .main__block4__txt3 {
     font-size: 1.8vw;
   }
+  .main__block4__txt2 {
+    font-size: 3vw;
+  }
 }
 @media screen and (max-width: 1060px) {
   .header-nav__item {
@@ -389,15 +419,30 @@ header {
   .main__block4__txt1 {
     font-size: 4.2vw;
   }
-  .main__block4__txt2 {
-    font-size: 3.8vw;
-  }
+
   .main__block4__txt3 {
     font-size: 2.8vw;
   }
   .main__block__oval1 {
     padding: 1vw 2.5vw;
     border-radius: 3vw;
+    font-size: 2vw;
+  }
+  .main__block4__nav__item {
+    margin: 40px 0;
+    font-size: 2vw;
+  }
+  .main__block4__nav li a {
+    margin: 0;
+    padding: 16px 36px;
+  }
+  .main__block4__tab-title__logo {
+    height: 0;
+    background-size: contain;
+    top: 35%;
+    padding-top: 20%;
+  }
+  .main__block4__txt3 {
     font-size: 2vw;
   }
 }
@@ -469,6 +514,9 @@ header {
     background-size: contain;
     padding-top: 10%;
     align-self: center;
+  }
+  .main__block4__nav__item {
+    font-size: 3vw;
   }
 }
 
