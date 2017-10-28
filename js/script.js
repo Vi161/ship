@@ -1,6 +1,16 @@
 $(document).ready(function() {
-    $("#owl-demo").owlCarousel({
+//    --------hide div-----------
+    $(function(){
+        $('.main__block4__hide').hide();
+        $a = $('.main__block4__button');
+        $a.on('click', function(event) {
+            event.preventDefault();
+            $a.not(this).next().slideUp(500);
+            $(this).next().slideToggle(500);
+        });
+    });
 
+    $("#owl-demo").owlCarousel({
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true,
@@ -27,8 +37,5 @@ $(document).ready(function() {
         // itemsDesktopSmall : false,
         // itemsTablet: false,
         // itemsMobile : false
-
     });
-
-
 });
