@@ -228,7 +228,12 @@ header {
   font-family: "Roboto-Black";
   color: #ffffff;
   padding-top: 25px;
-
+}
+.main__block5__txt1 {
+  font-size: 60px;
+  font-family: "Roboto-Black";
+  color: #ffffff;
+  padding-top: 25px;
 }
 .main__block4__txt2 {
   font-size: 36px;
@@ -236,7 +241,20 @@ header {
   color: rgb(245, 224, 133);
   padding-bottom: 20px;
 }
+.main__block5__txt2 {
+  font-size: 30px;
+  font-family: "RobotoSlab-Bold";
+  color: rgb(86, 155, 189);
+  padding-bottom: 20px;
+}
 .main__block4__txt3 {
+  font-size: 24px;
+  font-family: "RobotoSlab-Regular";
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+.main__block5__txt3 {
   font-size: 24px;
   font-family: "RobotoSlab-Regular";
   color: #ffffff;
@@ -249,6 +267,9 @@ header {
   border-left: 36px solid transparent;
   border-right: 36px solid transparent;
   border-top: 18px solid white;
+}
+.triangle2 {
+  border-top: 18px solid #1d7b54;
 }
 .main__block4__button {
   background-color: #ffffff;
@@ -406,6 +427,18 @@ header {
   text-align: left;
   font-size: 18px;
 }
+.main__block5__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__block5 {
+  width: 100%;
+  height: 648px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/background-form1.jpg);
+}
 @media screen and (max-width: 1460px) {
   .main__block1__img {
     height: 0;
@@ -438,7 +471,13 @@ header {
   .main__block4__txt3 {
     font-size: 1.8vw;
   }
+  .main__block5__txt3 {
+    font-size: 1.8vw;
+  }
   .main__block4__txt2 {
+    font-size: 2.2vw;
+  }
+  .main__block5__txt2 {
     font-size: 2.2vw;
   }
   .main__block4__table__list1 {
@@ -458,6 +497,21 @@ header {
     padding: 0 2vw;
   }
 }
+.main__block5__form__wrap {
+  width: 100%;
+  padding: 0 50px;
+}
+.main__block5__form {
+  display: flex;
+}
+.main__block5__form__input {
+  margin: 12px 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 0px;
+}
+
+
 @media screen and (max-width: 1060px) {
   .header-nav__item {
     font-size: 1.5vw;
@@ -477,8 +531,13 @@ header {
   .main__block4__txt1 {
     font-size: 4.2vw;
   }
-
+  .main__block5__txt1 {
+    font-size: 4.2vw;
+  }
   .main__block4__txt3 {
+    font-size: 1.8vw;
+  }
+  .main__block5__txt3 {
     font-size: 1.8vw;
   }
   .main__block__oval1 {
@@ -556,10 +615,19 @@ header {
   .main__block4__txt1 {
     font-size: 4.5vw;
   }
+  .main__block5__txt1 {
+    font-size: 4.5vw;
+  }
   .main__block4__txt2 {
     font-size: 3.8vw;
   }
+  .main__block5__txt2 {
+    font-size: 3.8vw;
+  }
   .main__block4__txt3 {
+    font-size: 2.2vw;
+  }
+  .main__block5__txt3 {
     font-size: 2.2vw;
   }
   .main__block__oval1 {
