@@ -427,7 +427,7 @@ header {
 .main__block4__table__wrap {
   display: flex;
   flex-direction: row;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 .main__block4__table__item {
   list-style: none;
@@ -488,6 +488,7 @@ header {
   display: flex;
   margin-top: 0;
   margin-bottom: 2px;
+  width: 100%;
 }
 
 .main__block5__form__input {
@@ -664,6 +665,44 @@ textarea {
 .main__block8__btn {
   margin-top: 8px;
 }
+.modal-content {
+  width: 622px;
+  height: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__txt1 {
+  color: rgb(119, 119, 119);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.modal__input1 {
+  background-color: rgb(215, 215, 215);
+  width: 426px;
+}
+.modal__btn__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 96px;
+  align-items: center;
+}
+.modal__btn {
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  background-color: rgb(29, 123, 84);
+  border-radius: 30px;
+  padding: 12px 41px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.modal__lnk {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  text-decoration: underline;
+  color: rgb( 86, 155, 189 );
+}
 
 @media screen and (max-width: 1460px) {
   .main__block1__img {
@@ -727,7 +766,6 @@ textarea {
   .main__block5__form__input {
     margin: 1vw;
     padding: 1vw;
-    width: auto;
     font-size: 1.2vw;
   }
   .btn-submit {
@@ -748,6 +786,9 @@ textarea {
   }
   .main__block8__btn__wrap {
     margin-left: 1vw;
+  }
+  .main__block8__form__input1 {
+    width: auto;
   }
 }
 @media screen and (max-width: 1060px) {
@@ -827,6 +868,18 @@ textarea {
   }
   .footer__copyright {
     font-size: 1.8vw;
+  }
+  .modal-content {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3vw;
+  }
+  .modal__txt1 {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .modal__lnk {
+    font-size: 2vw;
   }
 }
 @media (min-width: 768px)and (max-width: 1060px) {
@@ -931,6 +984,12 @@ textarea {
   }
   .footer__copyright {
     font-size: 2.2vw;
+  }
+  .modal__input1 {
+    width: 80%;
+  }
+  .main__block5__form__input {
+    font-size: 3vw;
   }
 }
 

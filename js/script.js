@@ -29,6 +29,7 @@ $(document).ready(function() {
 //                    dotsEach: 3,
         responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
             0:{
+                items:1
             },
             780:{
                 items:1
