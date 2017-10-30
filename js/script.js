@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 //    --------hide div-----------
     $(function(){
         $('.main__block4__hide').hide();
@@ -10,32 +11,31 @@ $(document).ready(function() {
         });
     });
 
-    $("#owl-demo").owlCarousel({
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true,
-        autoPlay: 2000,
-        pagination: false
+    $('.owl-carousel').owlCarousel({
 
-        // "singleItem:true" is a shortcut for:
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
-
-    });
-    $("#owl-demo1").owlCarousel({
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true,
-        autoPlay: 2000
-
-        // "singleItem:true" is a shortcut for:
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
+//        loop:true, //Зацикливаем слайдер
+        margin:0, //Отступ от элемента справа в 50px
+//        nav: false, //Отключение навигации
+        autoplay: true,
+        loop: true,
+//                    autoplay:true, //Автозапуск слайдера
+//                    smartSpeed:1000, //Время движения слайда
+        autoplayTimeout: 2000, //Время смены слайда
+        autoplaySpeed: 1000,
+        mouseDrag: true,
+        touchDrag: true,
+        navText: false,
+        dots: true,
+//                    dotsEach: 3,
+        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+            },
+            780:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
     });
 });
