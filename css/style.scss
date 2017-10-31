@@ -703,6 +703,17 @@ textarea {
   text-decoration: underline;
   color: rgb( 86, 155, 189 );
 }
+.terms__block1__img {
+  background-image: url(../img/banner-top-terms.jpg);
+  height: 420px;
+}
+
+.terms__block2__h {
+  color: #000000;
+}
+.terms__block2__txt {
+  white-space: pre-line;
+}
 
 @media screen and (max-width: 1460px) {
   .main__block1__img {
@@ -789,6 +800,12 @@ textarea {
   }
   .main__block8__form__input1 {
     width: auto;
+  }
+  .terms__block1__img {
+    padding-top: 37.9%;
+  }
+  .terms__block2 {
+    padding: 0 1vw;
   }
 }
 @media screen and (max-width: 1060px) {
