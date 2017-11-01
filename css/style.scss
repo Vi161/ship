@@ -714,7 +714,9 @@ textarea {
 .terms__block2__txt {
   white-space: pre-line;
 }
-
+.owl-theme .owl-dots .owl-dot span {
+  margin: 5px 3px;
+}
 @media screen and (max-width: 1460px) {
   .main__block1__img {
     height: 0;
