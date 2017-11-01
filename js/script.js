@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+//перелистывание к якорям
+    golink();
 //    --------hide div-----------
     $(function(){
         $('.main__block4__hide').hide();
@@ -40,3 +41,15 @@ $(document).ready(function() {
         }
     });
 });
+
+//перелистывание к якорям
+var golink = function(pad){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+};
