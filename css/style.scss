@@ -1040,7 +1040,12 @@ textarea {
     font-size: 3vw;
     width: auto;
   }
-
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    bottom: 0;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    zoom: 1;
+  }
 }
 
 
