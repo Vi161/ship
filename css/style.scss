@@ -132,6 +132,14 @@ a:hover {
 }
 header {
   padding: 14px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+.main {
+  margin-top: 80px;
 }
 .header-nav {
   margin: 0;
@@ -809,6 +817,12 @@ textarea {
   .terms__block2 {
     padding: 0 1vw;
   }
+  .main__block8__btn {
+    margin: 3vw 0;
+  }
+  .main__block5 {
+    height: auto;
+  }
 }
 @media screen and (max-width: 1060px) {
   .header-nav__item {
@@ -909,16 +923,25 @@ textarea {
   }
 }
 @media screen and (max-width: 768px) {
+  header {
+    padding: 3vw 0;
+  }
+  .main {
+    margin-top: 13vw;
+  }
   .navbar-logo {
     height: 0;
     background-size: contain;
-    padding-top: 3%;
+    padding-top: 5%;
+    margin-left: 3vw;
+    background-position: left;
   }
   .navbar-buttons {
     width: 100%;
   }
   .navbar-toggle {
     margin: 0;
+    margin-right: 2vw;
   }
   .header-nav__menu {
     float: left;
@@ -1009,6 +1032,7 @@ textarea {
   }
   .main__block5__form__input {
     font-size: 3vw;
+    width: auto;
   }
 }
 
